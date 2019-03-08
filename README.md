@@ -20,3 +20,6 @@ For the training set we have many pairs of human readable dates and machine read
 - The diagram on the right uses a `RepeatVector` node to copy s_(t-1)'s value Tx times, and then `Concatenation` to concatenate s_(t-1) and a_t to compute e_(t,t'), which is then passed through a softmax to compute alpha(t,t').   
 
 ## Attention Maps
+
+When we want to translate ** Tuesday 09 Oct 1993 **, we can obeserve the attention of the model falls on the specific character:  
+<img src='https://github.com/mingbocui/Translating-Dates-With-Attention-Model/blob/master/Attention%20Map.PNG'>
